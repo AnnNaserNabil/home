@@ -60,8 +60,16 @@ body {
   display: flex;
   flex-direction: row;
   gap: 0.8rem;
-  flex-wrap: wrap;
+  overflow-x: auto;         /* Enables horizontal scrolling */
+  max-width: 100%;          /* Prevents overflow from the screen */
+  padding: 0.5rem;          /* Optional: gives space inside the scroll area */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
 }
+
+#main-section .social::-webkit-scrollbar {
+  display: none; /* Optional: hides the scrollbar for cleaner look */
+}
+
 
 #main-section .social i {
   color: white;
