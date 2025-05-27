@@ -7,6 +7,7 @@ html {
   font-family: Montserrat;
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
   width: 60%;
   max-width: 300px;
   border-radius: 1000px;
+  transition: all 0.3s ease-in-out;
 }
 
 #main-section h1 {
@@ -58,9 +60,71 @@ body {
   display: flex;
   flex-direction: row;
   gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 #main-section .social i {
   color: white;
   font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  #main-section {
+    padding: 12px;
+  }
+
+  #main-section img {
+    width: 70%;
+    max-width: 250px;
+  }
+
+  #main-section h1 {
+    font-size: 1.6rem;
+  }
+
+  #main-section h2 {
+    font-size: 1.2rem;
+  }
+
+  #main-section p {
+    font-size: 0.95rem;
+  }
+
+  #main-section .social i {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 480px) {
+  #main-section {
+    padding: 10px;
+  }
+
+  #main-section img {
+    width: 80%;
+    max-width: 200px;
+  }
+
+  #main-section h1 {
+    font-size: 1.4rem;
+  }
+
+  #main-section h2 {
+    font-size: 1rem;
+  }
+
+  #main-section p {
+    font-size: 0.9rem;
+  }
+
+  #main-section .social {
+    gap: 0.6rem;
+  }
+
+  #main-section .social i {
+    font-size: 1.4rem;
+  }
 }
